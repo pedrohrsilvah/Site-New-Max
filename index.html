@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Max</title>
+  <meta
+    name="description"
+    content="New Max: servicos metalurgicos com foco em estruturas, soldagem, caldeiraria e projetos sob medida."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" type="image/png" href="assets/site-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="New Max">
+        <img class="brand-logo" src="assets/header-logo.png" alt="Logo da New Max">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicos">Servicos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Precisao, resistencia e acabamento profissional</p>
+          <h1>Soluções metalúrgicas sob medida que entregam resultado</h1>
+          <p class="hero-text">
+            A New Max desenvolve estruturas metalicas, soldagem, reformas e pecas especiais com agilidade,
+            seguranca e padrao tecnico para cada projeto.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contato">Solicitar orcamento</a>
+            <a class="button button-secondary" href="#projetos">Ver trabalhos</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="hero-card hero-card-main">
+            <span class="card-label">Especialidades</span>
+            <h2>Estruturas, serralheria e caldeiraria com execucao precisa.</h2>
+            <div class="chip-row">
+              <span>Soldagem</span>
+              <span>Corte</span>
+              <span>Montagem</span>
+              <span>Reforma</span>
+            </div>
+          </div>
+
+          <div class="hero-card hero-card-metrics">
+            <div>
+              <strong data-counter="12">0</strong>
+              <span>Anos de experiencia</span>
+            </div>
+            <div>
+              <strong data-counter="280">0</strong>
+              <span>Projetos entregues</span>
+            </div>
+            <div>
+              <strong data-counter="100">0</strong>
+              <span>% foco em qualidade</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="servicos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Servicos para diferentes necessidades metalurgicas</h2>
+          <p>
+            Atuamos em fabricacao, manutencao e execucao de pecas e estruturas para clientes residenciais,
+            comerciais e industriais.
+          </p>
+        </div>
+
+        <div class="service-grid" id="service-grid"></div>
+      </section>
+
+      <section class="projects section" id="projetos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trabalhos realizados</p>
+          <h2>Exemplos visuais do que a New Max entrega</h2>
+          <p>Use os filtros para navegar entre tipos de projeto e destacar o que mais combina com sua necessidade.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Filtrar projetos">
+          <button class="filter-button is-active" type="button" data-filter="all">Todos</button>
+          <button class="filter-button" type="button" data-filter="estruturas">Estruturas</button>
+          <button class="filter-button" type="button" data-filter="soldagem">Soldagem</button>
+          <button class="filter-button" type="button" data-filter="serralheria">Serralheria</button>
+        </div>
+
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="about section" id="sobre">
+        <div class="about-layout">
+          <div class="about-copy reveal">
+            <p class="eyebrow">Sobre a New Max</p>
+            <h2>Uma empresa focada em qualidade, compromisso e resultado duradouro.</h2>
+            <p>
+              A New Max nasceu para atender demandas metalurgicas com mais precisao, responsabilidade e
+              flexibilidade. Cada servico e desenvolvido pensando em resistencia, seguranca e excelente
+              apresentacao final.
+            </p>
+            <p>
+              Trabalhamos lado a lado com cada cliente para entender a necessidade, propor a melhor solucao e
+              entregar um resultado confiavel, seja em pequenos projetos ou em execucoes de maior porte.
+            </p>
+          </div>
+
+          <div class="about-highlights reveal" id="about-highlights"></div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contato">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos conversar sobre o seu projeto?</h2>
+            <p>
+              Entre em contato para pedir um orcamento, tirar duvidas ou alinhar uma visita tecnica.
+            </p>
+          </div>
+
+          <div class="contact-actions" id="contact-actions"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>New Max Metalurgia e Solucoes Industriais</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
